@@ -28,3 +28,5 @@ Fixed Navigation
 // Fix NavBar
 
 
+//AOS 
+AOS.init();
