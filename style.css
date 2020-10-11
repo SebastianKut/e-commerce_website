@@ -192,6 +192,46 @@ Navigation Media Query
 ======================
 */
 
+@media only screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    left: -30rem;
+    width: 0;
+    background-color:  var(--white);
+    z-index: 9990;
+    height: 100%;
+    transition: all .3s;
+  }
+
+  .nav__menu.open {
+    left: 0rem;
+    width: 30rem;
+  }
+
+  .nav__logo {
+    width: 50%;
+  }
+
+  .nav__hamburger {
+    display: block;
+  }
+
+  .menu__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--orange);
+    padding: 1.8rem 1rem;
+  }
+
+  .menu__top svg {
+    height: 1.6rem;
+    width: 1.6rem;
+    fill: var(--primaryColor);
+  }
+
+}
 
 /*
 ======================
