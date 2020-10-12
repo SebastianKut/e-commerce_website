@@ -5,8 +5,6 @@ Glide Js Carousel
  */
 const slider1 = document.querySelector('#glide_1');
 
-
-
 /*
 =============
 Hero
