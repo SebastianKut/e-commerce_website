@@ -640,6 +640,12 @@ span.dot::before {
   opacity: .6;
 }
 
+.section__title.active .primary__title, 
+.section__title.active span.dot,
+.section__title.active span.dot::before {
+  opacity: 1;  
+}
+
 .section.active span.dot {
   opacity: 1;
 }
