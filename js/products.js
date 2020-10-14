@@ -8,7 +8,7 @@ Load Category Products
 //Get Products
 const getProducts = async () => {
     try {
-        const results = await fetch('/data/products.json');
+        const results = await fetch('https://raw.githubusercontent.com/SebastianKut/e-commerce_website/master/data/products.json');
         const data = await results.json();
         const products = data.products;
         return products; //returns array of objects from .jsob file
