@@ -23,21 +23,25 @@ navClose.addEventListener('click', () => {
 
 /*
 =============
-PopUp
-=============
- */
-
-
-/*
-=============
 Fixed Navigation
 =============
  */
-
-
+const navBar = document.querySelector('.navigation');
+const goToTop = document.querySelector('.goto-top');
+const scrollLink = document.querySelectorAll('.scroll-link');
 
 // Smooth Scroll
 
+Array.from(scrollLink).map(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+
+        const id = e.currentTarget.getAttribute('href').slice(1);
+        const element = document.getElementById(id);
+        console.log (e.currentTarget.getAttribute('href'));
+        
+    })
+})
 
 
 // Fix NavBar
