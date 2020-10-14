@@ -4,6 +4,7 @@ Glide Js Carousel
 =============
  */
 const slider1 = document.querySelector('#glide_1');
+const slider2 = document.querySelector('#glide_2');
 
 /*
 =============
@@ -27,6 +28,21 @@ if(slider1) {
 Latest Products
 =============
  */
+
+if(slider2) {
+    new Glide(slider2, {
+        type: 'carousel',
+        startAt: 0,
+        haverpause: true,
+        perView: 4,
+        animationDuration: 800,
+        animationTimingFunc: "cubic-bezier(0.165, 0.840, 0.440, 1.000)",
+        breakpoints: {
+            1200: {perView: 3},
+            768: {perView: 2},
+        },
+    }).mount();
+}
 
 
 
