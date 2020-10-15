@@ -368,8 +368,9 @@ Hero Area
 }
 
 .hero__left {
-  padding: 0  3rem;
   flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .hero__btn {
@@ -484,13 +485,14 @@ Collection
   text-align: center;
 }
 
-.collection__box .img.collection_01 {
-width: 60%;
-}
-
-.collection__box .img.collection_02 {
+.collection__box img.collection_01 {
   width: 60%;
 }
+
+.collection__box img.collection_02 {
+  width: 75%;
+}
+
 
 .collection__content {
   flex: 0 0 50%;
