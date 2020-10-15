@@ -33,7 +33,7 @@ const displayProductItems = items => {
             <img src=${product.image} alt="">
             </div>
             <div class="product__footer">
-            <h3>${product.tite}</h3>
+            <h3>${product.title}</h3>
             <div class="rating">
                 <svg>
                 <use xlink:href="./images/sprite.svg#icon-star-full"></use>
